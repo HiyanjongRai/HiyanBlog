@@ -31,6 +31,43 @@ const BlogDetail = () => {
       <Helmet>
         <title>{blog.title} | Hiyan Jong Rai</title>
         <meta name="description" content={`Explore ${blog.title} - ${blog.subtitle}. A cinematic travel story and photography collection by Hiyan Jong Rai.`} />
+        <link rel="canonical" href={`https://hiyan-travel-blog.vercel.app/blog/${blogId}`} />
+
+        {/* OG Tags */}
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content={`${blog.title} | Travel Story`} />
+        <meta property="og:description" content={blog.subtitle} />
+        <meta property="og:image" content={blog.heroImage} />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={blog.title} />
+        <meta name="twitter:description" content={blog.subtitle} />
+
+        {/* Schema markup for BlogPosting */}
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "BlogPosting",
+              "headline": "${blog.title}",
+              "alternativeHeadline": "${blog.subtitle}",
+              "image": "${blog.heroImage}",
+              "author": {
+                "@type": "Person",
+                "name": "Hiyan Jong Rai"
+              },
+              "publisher": {
+                "@id": "HiyanJongRai"
+              },
+              "url": "https://hiyan-travel-blog.vercel.app/blog/${blogId}",
+              "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://hiyan-travel-blog.vercel.app/blog/${blogId}"
+              }
+            }
+          `}
+        </script>
       </Helmet>
       <Navbar />
       <MobileNavbar />

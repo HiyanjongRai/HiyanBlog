@@ -9,9 +9,14 @@ const BlogGrid = ({ posts }) => {
         <article key={post.id} className="blog-post-card">
           <div className="post-thumbnail-box">
              <Link to={`/blog/${post.blogId}`}>
-               <img src={post.imageUrl} alt={post.title} className="post-thumbnail" />
+               <img 
+                 src={post.imageUrl} 
+                 alt={post.title} 
+                 className="post-thumbnail" 
+                 loading="lazy"
+               />
              </Link>
-             <span className="post-card-category">DESTINATION</span>
+             <span className="post-card-category">{post.category || 'TRAVEL'}</span>
           </div>
 
           <div className="post-card-content">
@@ -20,8 +25,8 @@ const BlogGrid = ({ posts }) => {
             </h2>
             
             <div className="post-card-meta">
-               <span className="post-meta-date">JANuary 15, 2026</span>
-               <span className="post-meta-author">BY ADMIN</span>
+               <span className="post-meta-date">{post.date}</span>
+               <span className="post-meta-author">BY HIYAN JONG RAI</span>
             </div>
 
             <p className="post-card-excerpt">
@@ -29,7 +34,7 @@ const BlogGrid = ({ posts }) => {
             </p>
 
             <Link to={`/blog/${post.blogId}`} className="post-read-more">
-              CONTINUE READING
+              EXPLORE STORY
             </Link>
           </div>
         </article>

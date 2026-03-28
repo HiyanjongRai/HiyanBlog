@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -31,11 +32,11 @@ const Navbar = () => {
         
         <nav className="overlay-content">
           <ul className="menu-list">
-            <li style={{ '--index': 1 }} onClick={closeMenu}><a href="#home">HOME</a></li>
-            <li style={{ '--index': 2 }} onClick={closeMenu}><a href="#about">ABOUT</a></li>
-            <li style={{ '--index': 3 }} onClick={closeMenu}><a href="#work">WORK</a></li>
-            <li style={{ '--index': 4 }} onClick={closeMenu}><a href="#blog">BLOG</a></li>
-            <li style={{ '--index': 5 }} onClick={closeMenu}><a href="#contact">CONTACT</a></li>
+            <li style={{ '--index': 1 }} onClick={closeMenu}><Link to="/">HOME</Link></li>
+            <li style={{ '--index': 2 }} onClick={closeMenu}><Link to="/#about">ABOUT</Link></li>
+            <li style={{ '--index': 3 }} onClick={closeMenu}><Link to="/#work">WORK</Link></li>
+            <li style={{ '--index': 4 }} onClick={closeMenu}><Link to="/#blog">BLOG</Link></li>
+            <li style={{ '--index': 5 }} onClick={closeMenu}><Link to="/#contact">CONTACT</Link></li>
           </ul>
         </nav>
       </div>

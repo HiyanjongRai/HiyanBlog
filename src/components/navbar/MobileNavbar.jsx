@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './MobileNavbar.css';
 
 const MobileNavbar = () => {
@@ -43,10 +44,10 @@ const MobileNavbar = () => {
         
         <nav className="mobile-menu-items">
           <ul>
-            <li onClick={closeMenu}><a href="#home">HOME</a></li>
-            <li onClick={closeMenu}><a href="#about">ABOUT</a></li>
-            <li onClick={closeMenu}><a href="#contact">CONTACT</a></li>
-            <li onClick={closeMenu}><a href="#blog">BLOG</a></li>
+            <li onClick={closeMenu}><Link to="/">HOME</Link></li>
+            <li onClick={closeMenu}><Link to="/#about">ABOUT</Link></li>
+            <li onClick={closeMenu}><Link to="/#contact">CONTACT</Link></li>
+            <li onClick={closeMenu}><Link to="/#blog">BLOG</Link></li>
           </ul>
         </nav>
       </div>
