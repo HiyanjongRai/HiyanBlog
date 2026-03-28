@@ -3,20 +3,32 @@ import { motion, AnimatePresence } from 'framer-motion';
 import './TravelHeader.css';
 
 // Importing your local banner media
-import video2 from '/src/assets/Banner/IMG_9310.MOV';
-import video3 from '/src/assets/Banner/IMG_9709.MOV';
-import img1 from '/src/assets/Banner/IMG_8186.JPG';
-import img2 from '/src/assets/Banner/IMG_9020.JPG';
-import img3 from '/src/assets/Banner/IMG_9562.JPG';
-import img4 from '/src/assets/Banner/IMG_9715.JPG';
+import video1 from '/src/assets/Banner/IMG_9310.MOV';
+import video2 from '/src/assets/Banner/IMG_9709.MOV';
+import img1 from '/src/assets/Banner/banner1 (1).jpg';
+import img2 from '/src/assets/Banner/banner2 (1).jpg';
+import img3 from '/src/assets/Banner/banner3 (1).jpg';
+import img4 from '/src/assets/Banner/banner4 (1).jpg';
+import img5 from '/src/assets/Banner/banner7 (1).jpg';
+import img6 from '/src/assets/Banner/banner8 (1).jpg';
+import img7 from '/src/assets/Banner/banner9 (1).jpg';
+import img8 from '/src/assets/Banner/banner10 (1).jpg';
+import img9 from '/src/assets/Banner/banner11 (1).jpg';
+import img10 from '/src/assets/Banner/banner56 (1).jpg';
 
 const slides = [
   { type: 'image', src: img1 },
-  { type: 'video', src: video2 },
+  { type: 'video', src: video1 },
   { type: 'image', src: img2 },
   { type: 'image', src: img3 },
-  { type: 'video', src: video3 },
+  { type: 'video', src: video2 },
   { type: 'image', src: img4 },
+  { type: 'image', src: img5 },
+  { type: 'image', src: img6 },
+  { type: 'image', src: img7 },
+  { type: 'image', src: img8 },
+  { type: 'image', src: img9 },
+  { type: 'image', src: img10 },
 ];
 
 const TravelHeader = () => {
