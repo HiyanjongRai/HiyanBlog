@@ -1,22 +1,22 @@
 /* Rauta Stories Data */
-import rauta1 from '../assets/rauta/rauta1.JPG';
-import rauta2 from '../assets/rauta/rauta.JPG';
-import rauta3 from '../assets/rauta/rauta3.JPG';
-import rauta4 from '../assets/rauta/rauta4.jpg';
-import rauta5 from '../assets/rauta/rauta5.jpg';
-import rauta6 from '../assets/rauta/rauta6.jpg';
-import rauta7 from '../assets/rauta/rauta7.jpg';
-import rauta8 from '../assets/rauta/rauta8.jpg';
-import rauta9 from '../assets/rauta/rauta9.JPG';
-import rauta10 from '../assets/rauta/rauta10.jpg';
-import rauta11 from '../assets/rauta/rauta11.jpg';
-import rauta12 from '../assets/rauta/rauta12.jpg';
-import rauta13 from '../assets/rauta/rauta13.jpg';
-import rauta14 from '../assets/rauta/rauta14.jpg';
-import rauta15 from '../assets/rauta/rauta15.jpg';
-import rauta16 from '../assets/rauta/rauta16.jpg';
-import rauta18 from '../assets/rauta/rauta18.jpg';
-import rauta99 from '../assets/rauta/rauta9.JPG'; // Using 9 for 18th point if missing
+import rauta1 from '../assets/Rauta/rauta1.JPG';
+import rauta2 from '../assets/Rauta/rauta.JPG';
+import rauta3 from '../assets/Rauta/rauta3.JPG';
+import rauta4 from '../assets/Rauta/rauta4.jpg';
+import rauta5 from '../assets/Rauta/rauta5.jpg';
+import rauta6 from '../assets/Rauta/rauta6.jpg';
+import rauta7 from '../assets/Rauta/rauta7.jpg';
+import rauta8 from '../assets/Rauta/rauta8.jpg';
+import rauta9 from '../assets/Rauta/rauta9.JPG';
+import rauta10 from '../assets/Rauta/rauta10.jpg';
+import rauta11 from '../assets/Rauta/rauta11.jpg';
+import rauta12 from '../assets/Rauta/rauta12.jpg';
+import rauta13 from '../assets/Rauta/rauta13.jpg';
+import rauta14 from '../assets/Rauta/rauta14.jpg';
+import rauta15 from '../assets/Rauta/rauta15.jpg';
+import rauta16 from '../assets/Rauta/rauta16.jpg';
+import rauta18 from '../assets/Rauta/rauta18.jpg';
+import rauta99 from '../assets/Rauta/rauta9.JPG'; // Using 9 for 18th point if missing
 
 export const rautaStories = [
   {

@@ -1,8 +1,8 @@
-import rauta1 from '../assets/rauta/rauta1.JPG';
-import rauta2 from '../assets/rauta/rauta.JPG';
+import rauta1 from '../assets/Rauta/rauta1.JPG';
+import rauta2 from '../assets/Rauta/rauta.JPG';
 import bheda1 from '../assets/Nuwakot Bhedafarm/bheda1.JPG';
 import bheda2 from '../assets/Nuwakot Bhedafarm/bheda2.JPG';
-import rauta3 from '../assets/rauta/rauta3.JPG';
+import rauta3 from '../assets/Rauta/rauta3.JPG';
 import bheda3 from '../assets/Nuwakot Bhedafarm/bheda3.JPG';
 
 export const images = [

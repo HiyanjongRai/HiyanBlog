@@ -1,8 +1,8 @@
 import { rautaStories } from './rautaStories';
 import { bhedaStories } from './bhedaStories';
-import rautaHero from '../assets/rauta/rauta10.jpg';
+import rautaHero from '../assets/Rauta/rauta10.jpg';
 import bhedaHero from '../assets/Nuwakot Bhedafarm/bheda0.JPG';
-import rautaMusic from '/src/assets/audio/Hindda Hinddai.mp3';
+import rautaMusic from '/src/assets/Audio/Hindda Hinddai.mp3';
 
 // Placeholder for Kathmandu until we have images
 export const ALL_BLOGS = {
