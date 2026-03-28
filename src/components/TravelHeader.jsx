@@ -3,8 +3,6 @@ import { motion, AnimatePresence } from 'framer-motion';
 import './TravelHeader.css';
 
 // Importing your local banner media
-import video1 from '/src/assets/Banner/IMG_9310.MOV';
-import video2 from '/src/assets/Banner/IMG_9709.MOV';
 import img1 from '/src/assets/Banner/banner1 (1).jpg';
 import img2 from '/src/assets/Banner/banner2 (1).jpg';
 import img3 from '/src/assets/Banner/banner3 (1).jpg';
@@ -18,10 +16,8 @@ import img10 from '/src/assets/Banner/banner56 (1).jpg';
 
 const slides = [
   { type: 'image', src: img1 },
-  { type: 'video', src: video1 },
   { type: 'image', src: img2 },
   { type: 'image', src: img3 },
-  { type: 'video', src: video2 },
   { type: 'image', src: img4 },
   { type: 'image', src: img5 },
   { type: 'image', src: img6 },
