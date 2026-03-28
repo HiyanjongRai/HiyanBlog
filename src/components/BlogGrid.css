@@ -83,8 +83,9 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .blog-posts-feed {
     grid-template-columns: 1fr;
+    gap: 30px;
   }
 }

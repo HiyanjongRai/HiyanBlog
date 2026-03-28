@@ -128,3 +128,15 @@
   cursor: pointer;
   font-size: 0.85rem;
 }
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .travel-logo-text { font-size: 3.5rem; letter-spacing: 12px; }
+}
+
+@media (max-width: 768px) {
+  .travel-logo-text { font-size: 2.22rem; letter-spacing: 8px; margin-bottom: 10px; }
+  .travel-logo-sub { font-size: 0.75rem; letter-spacing: 4px; }
+  .slider-controls-centered { bottom: 80px; gap: 10px; }
+  .social-links-container { flex-direction: column; gap: 15px; }
+  .header-search { border-left: none; padding-left: 0; }
+}

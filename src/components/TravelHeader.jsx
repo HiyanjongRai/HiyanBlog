@@ -61,8 +61,8 @@ const TravelHeader = () => {
       </AnimatePresence>
 
       <div className="travel-header-logo-card">
-        <h1 className="travel-logo-text">TRAVEL BLOG</h1>
-        <p className="travel-logo-sub">COLLECTING MEMORIES</p>
+        <h1 className="travel-logo-text">HIYAN JONG RAI</h1>
+        <p className="travel-logo-sub">OFFICIAL TRAVEL BLOG | COLLECTING MEMORIES</p>
       </div>
 
       <div className="slider-controls-centered">

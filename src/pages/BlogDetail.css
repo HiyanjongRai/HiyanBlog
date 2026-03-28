@@ -67,6 +67,34 @@
   color: rgba(255,255,255,0.6);
 }
 
+/* Preface Intro Text */
+.story-intro-preface {
+  padding: 120px 0 80px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.preface-content p {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.35rem;
+  line-height: 2;
+  color: #333;
+  margin-bottom: 30px;
+  text-align: justify;
+}
+
+.section-divider-line {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.inner-line {
+  width: 100px;
+  height: 2px;
+  background: #3498DB;
+}
+
 /* 2. Content Flow */
 .story-content-flow {
   padding-top: 100px;
@@ -199,4 +227,10 @@
   .story-main-title-large {
     font-size: 3.5rem;
   }
+}
+
+@media (max-width: 768px) {
+  .story-main-title-large { font-size: 2.2rem; }
+  .memory-title { font-size: 1.8rem; }
+  .memory-desc { font-size: 1.1rem; }
 }

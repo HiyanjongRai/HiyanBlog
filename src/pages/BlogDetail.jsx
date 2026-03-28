@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { Link, useParams } from 'react-router-dom';
 import { ArrowLeft, Clock, MapPin } from 'lucide-react';
@@ -27,6 +28,10 @@ const BlogDetail = () => {
 
   return (
     <div className="blog-detail-root">
+      <Helmet>
+        <title>{blog.title} | Hiyan Jong Rai</title>
+        <meta name="description" content={`Explore ${blog.title} - ${blog.subtitle}. A cinematic travel story and photography collection by Hiyan Jong Rai.`} />
+      </Helmet>
       <Navbar />
       <MobileNavbar />
       
@@ -73,8 +78,7 @@ const BlogDetail = () => {
                    viewport={{ once: true }}
                 >
                   <div className="memory-meta">
-                     <span><Clock size={14} /> {item.date}</span>
-                     <span><MapPin size={14} /> {item.location || 'Nepal'}</span>
+                     <span><MapPin size={14} /> {blog.subtitle.split('|')[0].trim()}</span>
                   </div>
                   <h2 className="memory-title">{item.title}</h2>
                   <p className="memory-desc">{item.description}</p>

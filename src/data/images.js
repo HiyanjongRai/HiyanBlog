@@ -9,9 +9,9 @@ export const images = [
   {
     id: 1,
     imageUrl: rauta1,
-    title: 'Sunrise at Rauta Peak',
+    title: 'The Ride from Gaighat',
     blogId: 'rauta',
-    story: 'High above the clouds of Udayapur, where only the wind speaks, lies the Silent Peak. This mountain was once believed to be the home of the gods.'
+    story: 'It was 2079 B.S. when I first heard about Rauta. The ride from Gaighat started smooth, turning into a wild, off-road adventure through the hills of Udayapur.'
   },
   {
     id: 2,
@@ -23,9 +23,9 @@ export const images = [
   {
     id: 3,
     imageUrl: rauta2,
-    title: 'Floating in the Mist',
+    title: 'Beyond the Danda',
     blogId: 'rauta',
-    story: 'A sea of mist rolls across the valleys, turning the hills into islands. Floating in a dreamlike kingdom of clouds at Rauta.'
+    story: 'Standing at Nepali Danda, looking at the endless green hills layered one after another. Beyond them, the Himalayan range stood tall and silent.'
   },
   {
     id: 4,
@@ -37,9 +37,9 @@ export const images = [
   {
     id: 5,
     imageUrl: rauta3,
-    title: 'Sacred Waters of Rauta',
+    title: 'Rauta: A True Feeling',
     blogId: 'rauta',
-    story: 'Reaching the sacred Rauta Pokhari. Its still waters reflect the infinite blue sky, holding centuries of prayers and myths.'
+    story: 'Visiting the peaceful temple at the top, I realized Rauta was not just a place—it was a feeling. A serene escape from the noise of daily life.'
   },
   {
     id: 6,
