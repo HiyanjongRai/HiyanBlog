@@ -33,7 +33,7 @@ const Navbar = () => {
         <nav className="overlay-content">
           <ul className="menu-list">
             <li style={{ '--index': 1 }} onClick={closeMenu}><Link to="/">HOME</Link></li>
-            <li style={{ '--index': 2 }} onClick={closeMenu}><Link to="/#about">ABOUT</Link></li>
+            <li style={{ '--index': 2 }} onClick={closeMenu}><Link to="/about">ABOUT</Link></li>
             <li style={{ '--index': 3 }} onClick={closeMenu}><Link to="/#work">WORK</Link></li>
             <li style={{ '--index': 4 }} onClick={closeMenu}><Link to="/#blog">BLOG</Link></li>
             <li style={{ '--index': 5 }} onClick={closeMenu}><Link to="/#contact">CONTACT</Link></li>

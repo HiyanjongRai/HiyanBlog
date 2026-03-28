@@ -45,7 +45,7 @@ const MobileNavbar = () => {
         <nav className="mobile-menu-items">
           <ul>
             <li onClick={closeMenu}><Link to="/">HOME</Link></li>
-            <li onClick={closeMenu}><Link to="/#about">ABOUT</Link></li>
+            <li onClick={closeMenu}><Link to="/about">ABOUT</Link></li>
             <li onClick={closeMenu}><Link to="/#contact">CONTACT</Link></li>
             <li onClick={closeMenu}><Link to="/#blog">BLOG</Link></li>
           </ul>
