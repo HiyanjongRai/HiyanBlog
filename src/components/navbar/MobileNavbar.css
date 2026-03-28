@@ -1,0 +1,187 @@
+/* Mobile & Common Navbar Styling */
+.mobile-nav-container {
+  display: block; /* Shown only on mobile by default */
+  position: sticky;
+  top: 0;
+  z-index: 6000;
+  width: 100%;
+}
+
+/* Red top bar stripe */
+.top-red-bar {
+  height: 20px;
+  background-color: #C10D20;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+/* Gray Hamburger Trigger Box */
+.hamburger-box {
+  background-color: #E6E7E9;
+  width: 70px;
+  height: 60px;
+  border-radius: 0 0 12px 12px;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  z-index: 20;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hamburger-lines {
+  width: 25px;
+  height: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hamburger-lines span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: #6D6E71;
+  border-radius: 2px;
+}
+
+/* THE CURVED SIDE DRAWER (THE "FAN" LOOK) */
+.curved-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 320px; /* Fixed width for better control */
+  height: 550px; /* Fixed height for that specific curved look */
+  background-color: #E6E7E9;
+  z-index: 9000;
+  transform: translate(-110%, -110%); /* Start from top-left corner */
+  transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  border-bottom-right-radius: 250px 450px; /* This creates the large sweeping side curve */
+  display: flex;
+  flex-direction: column;
+  padding: 60px 40px;
+  box-shadow: 10px 10px 50px rgba(0,0,0,0.2);
+}
+
+.curved-overlay.open {
+  transform: translate(0, 0); /* Slide into view */
+}
+
+/* Close Button Placement (Top Right of the curved area) */
+.overlay-header-mobile {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.close-circle-mobile {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: white;
+  border: 3px solid #C10D20;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  outline: none;
+  transition: transform 0.3s ease;
+}
+
+.close-circle-mobile:hover {
+  transform: rotate(90deg) scale(1.1);
+}
+
+.x-mark-mobile {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.x-mark-mobile::before,
+.x-mark-mobile::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 22px;
+  height: 3px;
+  background-color: #C10D20;
+  border-radius: 2px;
+}
+
+.x-mark-mobile::before { transform: translate(-50%, -50%) rotate(45deg); }
+.x-mark-mobile::after { transform: translate(-50%, -50%) rotate(-45deg); }
+
+/* Menu Items Styles */
+.mobile-menu-items {
+  margin-top: 40px;
+}
+
+.mobile-menu-items ul {
+  list-style: none;
+  padding: 0;
+}
+
+.mobile-menu-items li {
+  margin-bottom: 30px;
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: all 0.5s ease;
+}
+
+.curved-overlay.open li {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.curved-overlay.open li:nth-child(1) { transition-delay: 0.3s; }
+.curved-overlay.open li:nth-child(2) { transition-delay: 0.4s; }
+.curved-overlay.open li:nth-child(3) { transition-delay: 0.5s; }
+.curved-overlay.open li:nth-child(4) { transition-delay: 0.6s; }
+
+.mobile-menu-items a {
+  text-decoration: none;
+  color: #6D6E71;
+  font-size: 1.8rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.mobile-menu-items a:hover {
+  color: #C10D20;
+}
+
+/* Backdrop */
+.mobile-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 8500;
+  backdrop-filter: blur(2px);
+}
+
+/* Media Queries for visibility */
+@media (min-width: 769px) {
+  .mobile-nav-container {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-header {
+    display: none !important;
+  }
+}

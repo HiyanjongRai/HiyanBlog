@@ -1,0 +1,109 @@
+.travel-sidebar {
+  width: 100%;
+}
+
+.sidebar-widget {
+  margin-bottom: 60px;
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.04);
+}
+
+.widget-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #111;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  position: relative;
+  text-align: center;
+}
+
+.nepali-name {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.75rem;
+  color: #999;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.about-image-box {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid #fff;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.about-image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-text {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.95rem;
+  color: #7f8c8d;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+.about-social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.about-social-links a {
+  color: #111;
+  font-size: 0.9rem;
+  transition: color 0.3s;
+}
+
+.about-social-links a:hover {
+  color: #3498DB;
+}
+
+.popular-post-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.popular-post-item {
+  display: flex;
+  gap: 15px;
+  text-align: left;
+  align-items: center;
+}
+
+.popular-post-item img {
+  width: 80px;
+  height: 80px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.popular-post-info h4 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+  line-height: 1.3;
+}
+
+.popular-post-info span {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.65rem;
+  color: #999;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}

@@ -1,0 +1,79 @@
+.featured-grid-section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.travel-grid-layout {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.featured-grid-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.featured-image-box {
+  width: 100%;
+  aspect-ratio: 4 / 5; /* Taller, more high-end magazine look */
+  background-color: #f5f5f5;
+}
+
+.featured-image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.featured-grid-item:hover img {
+  transform: scale(1.1);
+}
+
+.featured-item-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Align to bottom for better readability over dark gradient */
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+  background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 60%);
+  color: #fff;
+}
+
+.featured-category {
+  display: inline-block;
+  background: #3498DB;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 4px 14px;
+  border-radius: 2px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  box-shadow: 0 4px 10px rgba(52, 152, 219, 0.3);
+}
+
+.featured-item-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 5px;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+
+@media (max-width: 900px) {
+  .travel-grid-layout {
+    grid-template-columns: 1fr;
+  }
+}

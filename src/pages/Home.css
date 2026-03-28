@@ -1,0 +1,62 @@
+.full-feed-section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.feed-header-alt {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.feed-subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 5px;
+  color: #3498DB;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.feed-title-alt {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #111;
+}
+
+.sidebar-footer-container {
+  padding-top: 80px;
+  padding-bottom: 100px;
+  border-top: 1px solid rgba(0,0,0,0.05);
+}
+
+.travel-main-footer {
+  text-align: center;
+  padding: 60px 0;
+  border-top: 1px solid rgba(0,0,0,0.05);
+  background: #fdfdfd;
+}
+
+.travel-main-footer p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: #999;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1024px) {
+  .travel-main-content {
+    flex-direction: column;
+  }
+  
+  .travel-feed-left, 
+  .travel-sidebar-right {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-left: 0;
+    border-left: none;
+  }
+}

@@ -1,0 +1,183 @@
+/* Desktop Navbar Styles - Reverted to Full-Width Curtain Style (Optimized) */
+.navbar-header {
+  height: 80px;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  padding: 0 5%;
+  position: sticky;
+  top: 0;
+  z-index: 5000;
+}
+
+.hamburger {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 32px;
+  height: 20px;
+  transition: transform 0.3s ease;
+}
+
+.hamburger:hover {
+  transform: scale(1.1);
+}
+
+.hamburger span {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: white;
+  border-radius: 2px;
+}
+
+/* CURTAIN OVERLAY FOR DESKTOP */
+.overlay-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: #F45B25; /* Vibrant orange curtain */
+  z-index: 9999;
+  overflow: hidden;
+  transition: height 0.7s cubic-bezier(0.85, 0, 0.15, 1);
+  display: flex;
+  flex-direction: column;
+}
+
+.overlay-menu.show {
+  height: 30vh; /* Increased slightly to 30% for better spacing */
+  min-height: 220px;
+  box-shadow: 0 15px 50px rgba(0,0,0,0.6);
+}
+
+.overlay-header {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 60px;
+  background-color: #1A1A1A; /* Black header bar inside overlay */
+}
+
+/* Close Circle Styles (Matching premium theme) */
+.close-circle-desktop {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: white;
+  border: 4px solid #C10D20;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  outline: none;
+  z-index: 10001;
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.close-circle-desktop:hover {
+  transform: rotate(180deg) scale(1.1);
+}
+
+.x-mark-desktop {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.x-mark-desktop::before,
+.x-mark-desktop::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 24px;
+  height: 4px;
+  background-color: #C10D20;
+  border-radius: 2px;
+}
+
+.x-mark-desktop::before { transform: translate(-50%, -50%) rotate(45deg); }
+.x-mark-desktop::after { transform: translate(-50%, -50%) rotate(-45deg); }
+
+/* Content Layout (Horizontal links optimized) */
+.overlay-content {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 80px; /* Wider gap for more premium feel */
+}
+
+.menu-list li {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.overlay-menu.show li {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.overlay-menu.show li:nth-child(1) { transition-delay: 0.1s; }
+.overlay-menu.show li:nth-child(2) { transition-delay: 0.2s; }
+.overlay-menu.show li:nth-child(3) { transition-delay: 0.3s; }
+.overlay-menu.show li:nth-child(4) { transition-delay: 0.4s; }
+.overlay-menu.show li:nth-child(5) { transition-delay: 0.5s; }
+
+.menu-list a {
+  color: white;
+  text-decoration: none;
+  font-size: 2.22rem; /* Exact size focus */
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.menu-list a::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  width: 0;
+  height: 4px;
+  background-color: white;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.menu-list a:hover {
+  transform: scale(1.1);
+  text-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.menu-list a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+/* DESKTOP MEDIA QUERIES */
+@media (max-width: 1024px) {
+  .menu-list { gap: 40px; }
+  .menu-list a { font-size: 1.8rem; letter-spacing: 3px; }
+}
+
+@media (max-width: 768px) {
+  .navbar-header {
+    display: none !important;
+  }
+}
