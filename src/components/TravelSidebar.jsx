@@ -1,6 +1,6 @@
 import React from 'react';
 import './TravelSidebar.css';
-import meImg from '../assets/me/me.jpg';
+import meImg from '../assets/Me/me.jpg';
 
 const TravelSidebar = () => {
   return (
