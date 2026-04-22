@@ -2,7 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import Navbar from '../components/navbar/Navbar';
 import MobileNavbar from '../components/navbar/MobileNavbar';
-import TravelSidebar from '../components/TravelSidebar';
+import meImg from '../assets/Me/me.jpg';
 import './About.css';
 
 const About = () => {
@@ -10,45 +10,60 @@ const About = () => {
         <div className="about-page-root">
             <Helmet>
                 <title>About | Hiyan Jong Rai</title>
-                <meta name="description" content="Discover the story behind the lens. Hiyan Jong Rai's journey as a travel photographer and storyteller in Nepal." />
+                <meta name="description" content="Discover the story behind the lens. Hiyan Jong Rai is a travel photographer and BCA student." />
             </Helmet>
             <Navbar />
             <MobileNavbar />
             
             <main className="container about-main">
-                <header className="about-header">
-                    <span className="about-subtitle">THE STORY BEHIND THE LENS</span>
-                    <h1 className="about-title">About Me</h1>
-                </header>
+                <div className="about-editorial-grid">
+                    <div className="about-visual-column">
+                        <div className="about-img-accent"></div>
+                        <div className="about-image-wrapper">
+                            <img src={meImg} alt="Hiyan Jong Rai" className="about-hero-img" />
+                        </div>
+                    </div>
+                    
+                    <div className="about-content-column">
+                        <span className="about-greeting">HELLO, I'M</span>
+                        <h1 className="about-title-large">Hiyan Jong Rai <span className="devanagari-name">(हियान जोंग राई)</span></h1>
+                        
+                        <div className="about-divider"></div>
+                        
+                        <p className="about-lead">
+                            A BCA student from Gaighat, Udayapur, currently based in Kathmandu. 
+                            I love to travel, collect memories, and be part of every journey—sharing my feelings through each image I capture.
+                        </p>
+                        
+                        <div className="about-stats">
+                            <div className="stat-item">
+                                <h3>Photography</h3>
+                                <span>Visual Storytelling</span>
+                            </div>
+                            <div className="stat-item">
+                                <h3>Travel</h3>
+                                <span>Exploring Nepal</span>
+                            </div>
+                            <div className="stat-item">
+                                <h3>Web</h3>
+                                <span>BCA Student</span>
+                            </div>
+                        </div>
 
-                <div className="about-content-layout">
-                    <article className="about-text-narrative">
-                        <section className="narrative-section">
-                            <p>
-                                Based in the vibrant capital of Kathmandu and hailing from the peaceful green hills of Gaighat, Udayapur, my journey as a storyteller is fueled by the raw, natural beauty of Nepal. Through this immersive travel blog, I aim to transcend traditional visual galleries by providing deep, narrative contexts for each memory captured. My photography and videography reflect a personal quest to find the 'feeling' in every destination, whether it's the spiritual silence at the summit of Rauta Hill or the mist-covered pastures of Nuwakot Bheda Farm.
-                            </p>
-                        </section>
-
-                        <section className="narrative-section">
-                            <p>
-                                Over the years, I have realized that travel isn't just about the distance covered, but the memories collected along the way. My first definitive trip in 2078 B.S. changed my perspective on discovery. It taught me that every off-road trail, every early 5:30 AM start with friends like Nishan Kiran Chauhan, and every golden sunrise over the Himalayas is a story waiting to be told. From the smooth roads of Gaighat to the challenging dirt tracks of the Mahabharat range, each bump and turn is a testament to the adventurous spirit.
-                            </p>
-                        </section>
-
-                        <section className="narrative-section">
-                            <p>
-                                This platform serves as a sanctuary for those who seek peace, refreshment, and a genuine connection with nature. Whether you're planning a religious visit to the temples of Udayapur or a scenic picnic at the sheep farms of Nuwakot, these stories offer a glimpse into the magical landscapes that define our motherland. Explore the 'Collected Works' feed and join me on a journey above the clouds, where the world is quiet and nature's symphony is the only sound. 🌿
-                            </p>
-                        </section>
-                    </article>
-
-                    <aside className="about-sidebar-aside">
-                        <TravelSidebar />
-                    </aside>
+                        <div className="about-social-box">
+                            <span>CONNECT WITH ME</span>
+                            <div className="about-social-icons">
+                                <a href="https://www.facebook.com/hiyanjong.rai69" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f"></i></a>
+                                <a href="https://www.instagram.com/tilung.hiyanjongrai/" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a>
+                                <a href="https://www.pinterest.com/HiyanjongRai/" target="_blank" rel="noopener noreferrer"><i className="fab fa-pinterest-p"></i></a>
+                                <a href="https://www.youtube.com/channel/UCSw-l6BnDh2kRPH30Y6ugtw" target="_blank" rel="noopener noreferrer"><i className="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </main>
 
-            <footer className="about-footer">
+            <footer className="travel-main-footer">
                 <div className="container">
                     <p>&copy; 2026 HIYAN JONG RAI. All memories reserved.</p>
                 </div>
